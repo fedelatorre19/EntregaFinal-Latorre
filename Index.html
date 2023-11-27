@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ejercitando</title>
+</head>
+<body>
+    <h1>Ejercitando</h1>
+
+   <label for="zonaCuerpo">Zona del Cuerpo:</label>
+    <select id="zonaCuerpo">
+        <option value="" disabled selected>Seleccione una zona del cuerpo</option>
+        <option value="Tren Inferior">Tren Inferior</option>
+        <option value="Tren Superior">Tren Superior</option>
+        <option value="Zona Media">Zona Media</option>
+    </select>
+
+    <label for="nombreEjercicio">Nombre del Ejercicio:</label>
+    <input list="ejercicios" id="nombreEjercicio" required>
+    <datalist id="ejercicios">
+        <option value="Apertura Banco Plano">
+        <option value="Banco Inclinado">
+        <option value="Banco Plano">
+        <option value="Camilla de Cuádriceps">
+        <option value="Curl Bíceps con Mancuerna">
+        <option value="Curl Bíceps Sentado">
+        <option value="Curl Nórdico">
+        <option value="Despegue">
+        <option value="Dominadas Abiertas">
+        <option value="Dominadas Cerradas">
+        <option value="Encogimiento de Hombros">
+        <option value="Espinales GHD">
+        <option value="Estocadas Posterior">
+        <option value="Estocadas">
+        <option value="Extension Tríceps Barra Recta">
+        <option value="Facepull Parado">
+        <option value="Facepull Sentado">
+        <option value="Flexiones">
+        <option value="Floor Press">
+        <option value="Fondos">
+        <option value="Hip Thrust">
+        <option value="Jalon al Pecho Abierto">
+        <option value="Jalon al Pecho Cerrado">
+        <option value="Prensa">
+        <option value="Press Arnold">
+        <option value="Press de Hombro">
+        <option value="Press Inclinado con Mancuerna">
+        <option value="Press Inclinado">
+        <option value="Press Militar">
+        <option value="Press Plano Neutro">
+        <option value="Press Plano">
+        <option value="Pull Over con Polea">
+        <option value="Remo a un Brazo">
+        <option value="Remo Pendlay">
+        <option value="Remo Sentado">
+        <option value="Remo Tumbado">
+        <option value="Rumano con Barra">
+        <option value="Rumano con Mancuerna">
+        <option value="Rumano con Pausa">
+        <option value="Sentadilla Split con Mancuerna">
+        <option value="Sentadilla">
+        <option value="Sumo">
+        <option value="Vuelos Laterales con Polea">
+    </datalist>
+
+    <div id="inputSection">
+        <label for="seriesInput">Número de series:</label>
+        <input type="number" id="seriesInput">
+        <button onclick="generarInputs()">Ingresar Series</button>
+    </div>
+    <div id="ejerciciosSection">
+        <!-- Aquí se mostrarán los ejercicios agregados -->
+    </div>
+    <button onclick="agregarOtroEjercicio()">Agregar otro ejercicio</button>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

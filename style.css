@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: black;
+    color: gold;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select, input[type="number"], button {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: gold;
+    color: black;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#inputSection {
+    width: 50%;
+    margin: 20px auto;
+}
+
+#ejerciciosSection {
+    margin: 20px 0;
+}
+
+#ejerciciosSection div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
